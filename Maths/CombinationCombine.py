@@ -21,13 +21,13 @@ if inputRelation == "and":
         inputn = int(input("Insert n variable here: "))
         inputr = int(input("Insert r variable here: "))
         globals()[i] = findCombination(inputn, inputr)
-    print(int(globals()[0] + globals()[1]))
+    print(int(globals()[0] * globals()[1]))
 elif inputRelation == "or":
     for i in range(2):
         print("Insert variables for",i+1,"here:")
         inputn = int(input("Insert n variable here: "))
         inputr = int(input("Insert r variable here: "))
         globals()[i] = findCombination(inputn, inputr)
-    print(int(globals()[0] * globals()[1]))
+    print(int(globals()[0] + globals()[1]))
 else:
     print("Error: Incorrect input")
